@@ -1,0 +1,32 @@
+<div class="topnav">
+    <a routerLink="/home">Home</a>
+    <a class="active" routerLink="/components/news">News</a>
+    <a routerLink="/components/contact">Contact</a>
+    <a routerLink="/components/about">About</a>
+    <a routerLink="/login" style="float: right;">Logout</a>
+</div>
+<div class="grid-container">
+    <div class="desktop:grid-col-12 grid-row">
+        <div class="grid-col-8">  
+            <nav class="nav-bar">
+                <ul class="nav-ul display-flex flex-row flex-align-center">
+                    <li class="nav-li"><a class="nav-item current-nav-tem"
+                            routerLink="/components/news">Overview</a>
+                    </li>
+                    <li class="nav-li">
+                        <a class="nav-item" routerLink="">Latest News on Music</a>
+                    </li>                    
+                </ul>
+            </nav>         
+            <div class="grid-row notifications-info" *ngFor="let item of news">
+                <div class="grid-col-11"  > <b style="font-size: 18px;color: black;" > {{item?.title}}</b>
+                    <p>{{item?.data}} <img src="/assets/icons/share.png" alt=""></p>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="grid-col-4 part-two">
+            giu
+        </div>
+    </div>   
+</div>

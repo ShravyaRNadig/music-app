@@ -1,1 +1,199 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none !important;
+  
+  }
+  
+  html {
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Source Sans Pro Web, Source Sans Pro, helvetica, arial, sans;
+    font-size: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  
+  }
+
+  .invalid-border{
+    border: 1px solid #e52207!important;
+  }
+
+  :root {
+    --color-dark-blue: #162e51;
+    --color-medium-blue: #005ea2;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-light-border: #dfe1e2;
+    --color-table-hover: #f1f9fc;
+    --color-light-grey: #f0f0f0;
+    --bg-color: #efeaea;
+    --color-border-light: #d9d6d6;
+    --color-light: #f7f7f7;
+    --color-light-skyblue: #dcdee0;
+    --color-dark: #000000;
+    --color-dark-grey: #c3c4c5;
+    --color-deep-dark-grey: #525050;
+    --color-light-grey-text: #565c65;
+    --color-grey: #d5d5d5;
+    --color-light-text: #a2a2a2;
+    --color-primary: #005ea2;
+    --color-secondry: #f38b10;
+    --color-blue: #0050d8;
+    --bg-mint: #047e56;
+    --bg-accent-cool: #0498b5;
+    --bg-accent-warm: #ff8522;
+    --header-height: 100px;
+    --bg-dark-blue: #172c50;
+    --bg-light-blue: #025da2;
+    --bg-light-grey: #f0f0f0;
+    --color-tabs: #025da2;
+    --color-warn: #faf3d1;
+  }
+
+  body{
+    min-height:100% !important;
+  }
+
+.grid-container {
+  max-width: 1440px;
+}
+
+.header-logo{
+  height: 35px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.grid-container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 87.5rem !important;
+  padding: 1rem;
+  /* padding-right: 1rem; */
+}
+.grid-row {
+  display: flex!important;
+  flex-wrap: wrap!important;
+}
+.grid-col, .tablet\:grid-col-fill {
+  flex: 1 1 0%!important;
+  width: auto!important;
+  max-width: 100%!important;
+  min-width: 1px;
+}
+
+.grid-col-2 {
+  flex: 0 1 auto!important;
+  width: 16.6666666667%!important;
+}
+
+.grid-col-3 {
+  width: 25%!important;
+}
+
+.grid-col-4{
+  flex: 0 1 auto!important;
+  width: 33.3333333333%!important;
+}
+
+.grid-col-5 {
+  width: 41.6666666667%!important;
+}
+
+.grid-col-6 {
+  flex: 0 1 auto!important;
+  width: 50%!important;
+}
+
+.grid-col-7 {
+  flex: 0 1 auto!important;
+  width: 57.7777777778%!important;
+}
+
+.grid-col-8 {
+  width: 66.6666666667%!important;
+}
+/*  */
+
+/* TEMP */
+
+.footer-right{
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #000;
+  /* position: relative; */
+  /* right: 10px; */
+  text-transform: uppercase;
+}
+
+.color-secondary{
+  color: #005EA2;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+:host .toast-top-right{
+  top:50px !important;
+}
+
+/*  */
+
+
+  /* REPONSIVE CSS*/
+  @media (min-width: 768px) and (max-width: 1024px) {
+  }
+  
+  /* 
+        ##Device = Low Resolution Tablets, Mobiles (Landscape)
+        ##Screen = B/w 481px to 767px
+      */
+  @media (min-width: 481px) and (max-width: 767px) {
+  }
+  
+  /* 
+        ##Device = Most of the Smartphones Mobiles (Portrait)
+        ##Screen = B/w 320px to 479px
+      */
+  @media (min-width: 320px) and (max-width: 480px) {
+  }
+  
+  @media (max-width: 1023px){
+    /* .header-logo{
+      display: none;
+    } */
+    .usa-button {
+      margin-right: 0rem;
+      margin-top: 15px;
+    }
+    .usa-search__input, [type=search]{
+      width: auto;
+    }
+    .user-info{
+      display: none;
+    }
+  }
+
+  @media (min-width: 64em) {
+    .grid-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+  }
