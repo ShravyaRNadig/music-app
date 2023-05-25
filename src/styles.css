@@ -128,6 +128,22 @@
 .grid-col-8 {
   width: 66.6666666667%!important;
 }
+
+.grid-col-9 {
+  width: 75.6666666667%!important;
+}
+
+.grid-col-10 {
+  width: 83.6666666667%!important;
+}
+
+.grid-col-11 {
+  width: 94.6666666667%!important;
+}
+
+.grid-col-12 {
+  width: 100%!important;
+}
 /*  */
 
 /* TEMP */

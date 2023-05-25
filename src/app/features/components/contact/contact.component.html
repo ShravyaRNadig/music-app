@@ -1,8 +1,16 @@
-<div class="topnav">
-    <a routerLink="/home">Home</a>
-    <a routerLink="/components/news">News</a>
-    <a class="active" routerLink="/components/contact">Contact</a>
-    <a routerLink="/components/about">About</a>
-    <a routerLink="/login" style="float: right;">Logout</a>
-  </div>
-  
+<div class="grid-container">
+    <div class="desktop:grid-col-12 grid-row">
+        <div class="grid-col-12">
+            <nav class="nav-bar">
+                <ul class="nav-ul display-flex flex-row flex-align-center">
+                    <li class="nav-li"><a class="nav-item" routerLink="/home">About</a>
+                    </li>
+                    <li class="nav-li">
+                        <a class="nav-item" routerLink="/components/news">News</a>
+                    </li>
+                    <li class="nav-li">
+                        <a class="nav-item current-nav-tem" routerLink="/components/contact">Contact</a>
+                    </li>
+                    
+                </ul>
+            </nav>

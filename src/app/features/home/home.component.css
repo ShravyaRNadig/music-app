@@ -1,27 +1,70 @@
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
+.nav-item {
+  text-decoration: none;
+  color: #71767a;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
+.nav-li {
   float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
+nav {
+  border-bottom: 2px solid #e9ecef;
+}
+
+.current-nav-tem {
+  color: #1356b4 !important;
+  border-bottom: 3px solid #1356b4;
+}
+
+/* b {
+  font-size: 18px;
+  font-style: oblique;
   color: black;
+} */
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+.music-report{
+  margin: 2px;
+  font-size: 18px;
+  font-style: oblique;
+ text-align: center;
+}
+
+.grid-col-12{
+  margin-bottom:10px ;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .nav-ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-li {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
 }

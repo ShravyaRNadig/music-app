@@ -1,7 +1,26 @@
-<div class="topnav">
-  <a class="active" routerLink="/home">Home</a>
-  <a routerLink="/components/news">News</a>
-  <a routerLink="/components/contact">Contact</a>
-  <a routerLink="/components/about">About</a>
-  <a routerLink="/login" style="float: right;">Logout</a>
+<div class="grid-container">
+    <div class="desktop:grid-col-12 grid-row">
+        <div class="grid-col-12">
+            <nav class="nav-bar">
+                <ul class="nav-ul display-flex flex-row flex-align-center">
+                    <li class="nav-li"><a class="nav-item current-nav-tem" routerLink="/home">About</a>
+                    </li>
+                    <li class="nav-li">
+                        <a class="nav-item" routerLink="/components/news">News</a>
+                    </li>
+                    <li class="nav-li">
+                        <a class="nav-item" routerLink="/components/contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="grid-col-12">
+        <img src="assets/images/All-New-Music's.png" alt="">
+        <p class="music-report">All New Music regularly scours the top music news websites for the latest music news.
+            <br> Below is the current list of websites we read to uncover the most important and relevant stories of the
+            day.
+        </p>
+        <li style="padding-top: 1rem;" *ngFor="let item of home">{{item?.homeTitle}}</li>
+    </div>
 </div>

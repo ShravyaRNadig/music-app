@@ -1,3 +1,19 @@
+// home component as overview
+
+export const homeOverview = [
+    {
+        homeTitle: "All New Music's brings you the latest music news and reviews, along with music videos and galleries, plus band features, blogs on your favourite artists, concert tickets, competitions and more."
+    },
+    {
+        homeTitle: "All New Music's provides comprehensive music info including reviews and biographies. Get recommendations for new music to listen to, stream or own."
+    },
+    {
+        homeTitle: "All New Music's is the leader in all things alternative culture. From new music to exclusive artist merchandise, we’ve got it all, first."
+    },
+]
+
+// news component 
+
 export const news = [
     {
         title: 'Spotify has spent less than 10% of its $100 million diversity fund' ,
@@ -23,4 +39,32 @@ export const news = [
         title: 'Music streaming services are focusing on original content to widen the net',
         data:'Last Updated : Oct 15 2017 | 11:28 PM IST',
     },
+]
+
+// news component 
+
+export const mostPopularNews = [
+    {
+        popularNews: "Post Malone Assured Fans He's Not on Drugs, Just Living His Best Dad Life: 'My Brain Is in a Super Dope Place'",
+    },
+    {
+        popularNews: "Jessica Simpson Is Ready for Summer, Poses in SKIMS Bikini.",
+    },
+    {
+        popularNews: "K-Pop Star Moon Bin of ASTRO Dead at 25.",
+    },
+    {
+        popularNews: "Luis Miguel Announces 2023 Tour: Here Are the North & South America Dates.",
+    },
+]
+
+// news component 
+
+export const topHits = [
+    {hitSongs:'Calm Down (with Selena Gomez) Rema, Selena Gomez.'},
+    {hitSongs:'Double Fantasy (with Future) The Weeknd, Future.'},
+    {hitSongs:'Kill Bill. SZA.'},
+    {hitSongs:'Flowers. Miley Cyrus.'},
+    {hitSongs:' Chemical. Post Malone.'},
+    {hitSongs:" Boy's a liar Pt. PinkPantheress, Ice Spice."},
 ]

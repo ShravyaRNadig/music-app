@@ -1,32 +1,66 @@
-<div class="topnav">
-    <a routerLink="/home">Home</a>
-    <a class="active" routerLink="/components/news">News</a>
-    <a routerLink="/components/contact">Contact</a>
-    <a routerLink="/components/about">About</a>
-    <a routerLink="/login" style="float: right;">Logout</a>
-</div>
 <div class="grid-container">
     <div class="desktop:grid-col-12 grid-row">
-        <div class="grid-col-8">  
+        <div class="grid-col-12">
             <nav class="nav-bar">
                 <ul class="nav-ul display-flex flex-row flex-align-center">
-                    <li class="nav-li"><a class="nav-item current-nav-tem"
-                            routerLink="/components/news">Overview</a>
+                    <li class="nav-li"><a class="nav-item" routerLink="/home">About</a>
                     </li>
                     <li class="nav-li">
-                        <a class="nav-item" routerLink="">Latest News on Music</a>
-                    </li>                    
+                        <a class="nav-item current-nav-tem" routerLink="/components/news">News</a>
+                    </li>
+                    <li class="nav-li">
+                        <a class="nav-item" routerLink="/components/contact">Contact</a>
+                    </li>
                 </ul>
-            </nav>         
-            <div class="grid-row notifications-info" *ngFor="let item of news">
-                <div class="grid-col-11"  > <b style="font-size: 18px;color: black;" > {{item?.title}}</b>
-                    <p>{{item?.data}} <img src="/assets/icons/share.png" alt=""></p>
-                   
+            </nav>
+        </div>
+        <div class="grid-col-8 part-one">
+                <nav class="nav-bar">
+                    <ul class="nav-ul display-flex flex-row flex-align-center">
+                        <li class="nav-li"><a class="nav-item current-nav-tem"
+                                routerLink="/components/news">Overview</a>
+                        </li>
+                        <li class="nav-li">
+                            <a class="nav-item" routerLink="/components/latest-news">Latest News on Music</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="grid-row news-info" *ngFor="let item of new">
+                    <div class="grid-col-11"> <b style="font-size: 18px;color: black;"> {{item?.title}}</b>
+                        <p>{{item?.data}}</p>
+
+                    </div>
+                </div>
+        </div>
+        <div class="grid-col-4 part-two " style="margin-top: 0.3rem;">
+            <nav class="nav-bar">
+                <ul class="nav-ul display-flex flex-row flex-align-center">
+                    <li class="nav-li"><a class="nav-item current-nav-tem" routerLink="/components/news">Most
+                            Popular</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="popular-news">
+                <b style="font-size: 18px;color: black;"> Popular News</b>
+                <li style="padding-top: 1rem;"  *ngFor="let item of popularNews">{{item?.popularNews}}</li>
+                
+            </div>
+            <hr>
+            <div>
+                <div class="grid-col-11"> <b style="font-size: 18px;color: black;"> Today's Top Hits</b>
+                     <li style="padding-top: 1rem;" *ngFor="let item of hits">{{item?.hitSongs}}</li>
+
                 </div>
             </div>
+           
+            <!-- Double Fantasy (with Future) The Weeknd, Future.
+            Kill Bill. SZA.
+            Flowers. Miley Cyrus.
+            Chemical. Post Malone.
+            Boy's a liar Pt. PinkPantheress, Ice Spice.
+            Players. Coi Leray.
+            Escapism. RAYE, 070 Shake. -->
         </div>
-        <div class="grid-col-4 part-two">
-            giu
-        </div>
-    </div>   
+    </div>
 </div>
